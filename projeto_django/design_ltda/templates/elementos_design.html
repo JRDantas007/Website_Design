@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>HOME</title>
+</head>
+<body>
+    <header>
+        <h1>Design de Casa</h1>
+    </header>
+    <nav>
+        <div class="menu-icon">&#9776;</div>
+        <ul>
+            <li><a href="{% url 'index' %}">Início</a></li>
+            <li><a href="{% url 'elementos_design' %}">Elementos de Design</a></li>
+            <li><a href="#">Ferramentas</a></li>
+            <li><a href="{% url 'contatos' %}">Contatos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://img.freepik.com/fotos-gratis/respingo-colorido-abstrato-3d-background-generativo-ai-background_60438-2509.jpg?w=1380&t=st=1702738229~exp=1702738829~hmac=60794c4732d658c3a2fd3de732240309f04d309970c9c2469280c6237eb0c9c8" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://img.freepik.com/fotos-premium/arte-abstrata-moderna-ilustracao-de-aquarela-geometria-elementos-dourados_971713-6554.jpg?w=1380" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://img.freepik.com/fotos-premium/ilustracao-3d-da-mente-criativa-com-lampada-generativa-ai_549702-683.jpg?w=1060" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+
+        <section class="container">
+            <div class="card">
+                <a href="#"><img src="https://img.freepik.com/fotos-gratis/formas-3d-coloridas-no-estilo-vaporwave_23-2148981126.jpg?w=996&t=st=1702738109~exp=1702738709~hmac=f1d85c8fe25482141fd0bba7b82f5f7b5af433d35d16e460974a155ebd24dae1" alt="Imagem de estátua"></a>
+                <div class="card-text">
+                    <h2>card 1</h2>
+                    <p>Insira aqui a descrição</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <a href="#"><img src="https://img.freepik.com/fotos-gratis/abstrato-de-lampada-criativa-em-ia-generativa-de-fundo-azul-brilhante_188544-8090.jpg?w=360&t=st=1702148832~exp=1702149432~hmac=14fb8a41913ed6193756b5e8d908f3263422681e56d673c3075c37ea74325c35" alt="Lampada"></a>
+                <div class="card-text">
+                    <h2>card 2</h2>
+                    <p>Insira aqui a descrição</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <a href="#"><img src="https://img.freepik.com/fotos-gratis/olhos-brilharam-com-as-cores-vibrantes-das-folhas-de-outono-generative-ai_8829-2921.jpg?w=360&t=st=1702148840~exp=1702149440~hmac=4316100226b9e9dc8c3489b2ca92b9b1883881079c3d71d735da63af21a90271" alt="Olho"></a>
+                <div class="card-text">
+                    <h2>card 3</h2>
+                    <p>Insira aqui a descrição</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <a href="#"><img src="https://img.freepik.com/fotos-gratis/astronauta-com-ilustracao-de-design-cyberpunk_826849-600.jpg?w=740&t=st=1702148842~exp=1702149442~hmac=fff1e0111743fe62dc0f706b0f9e946209b8907a332ef9c9575016e0cac964de" alt="Astronauta"></a>
+                <div class="card-text">
+                    <h2>card 4</h2>
+                    <p>Insira aqui a descrição</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <a href="#"><img src="https://img.freepik.com/fotos-gratis/um-menino-usando-um-par-de-oculos-vr-com-a-palavra-vr-na-frente_188544-27148.jpg?w=1380&t=st=1702149146~exp=1702149746~hmac=793044553768a3edb94995904a86ec34b5f67bfa11809da72a44c56780d1707e" alt="Oculos"></a>
+                <div class="card-text">
+                    <h2>card 5</h2>
+                    <p>Insira aqui a descrição</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <a href="#"><img src="https://img.freepik.com/fotos-gratis/conceito-abstrato-de-foguete-amarelo-em-estilo-cartoon_90220-1413.jpg?w=1060&t=st=1702149157~exp=1702149757~hmac=521a6c75d949bccf8b48a5544c56fd55c43f1506faa38018001e4c6cb60ffa1c" alt="Foguete"></a>
+                <div class="card-text">
+                    <h2>card 6</h2>
+                    <p>Insira aqui a descrição</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Design de Casa</p>
+    </footer>
+
+    <script>
+        document.querySelector(".menu-icon").addEventListener("click", function() {
+            document.querySelector("nav ul").classList.toggle("show");
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
